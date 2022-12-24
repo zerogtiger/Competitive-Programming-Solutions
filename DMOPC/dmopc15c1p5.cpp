@@ -1,4 +1,4 @@
-//Solution by OneZeroGuru on Github
+// Solution by zerogtiger on Github
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -11,17 +11,17 @@ typedef pair<ll, ll> pl;
 typedef pair<ll, pl> pll;
 const int MM = 1e5+5;
 
-string s; 
+int N, ans;
 int main()
 {
     ios::sync_with_stdio(0); cin.tie(0);
 
-    cin >> s;
-    int count = 0, curr = 0;
-    for(auto c : s)
+    cin >> N;
+    for (int i = 1; i <= N; i++) 
     {
-        if (isupper(c)) {count += (4-curr%4)%4; curr = 1;}
-        else curr++;
+        int temp; cin >> temp;
+        ans = __gcd(ans, abs(temp));
     }
-    cout << count << endl;
+    cout << ans;
+    
 }

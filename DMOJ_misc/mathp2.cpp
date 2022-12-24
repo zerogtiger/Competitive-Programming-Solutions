@@ -9,19 +9,24 @@ typedef pair<int, int> pi;
 typedef pair<int, pi> pii;
 typedef pair<ll, ll> pl;
 typedef pair<ll, pl> pll;
-const int MM = 1e5+5;
+const int MM = 1e5+5, mod = 1e9+7;
 
-string s; 
+int N; ll ans;
 int main()
 {
     ios::sync_with_stdio(0); cin.tie(0);
 
-    cin >> s;
-    int count = 0, curr = 0;
-    for(auto c : s)
+    cin >> N;
+    for (int i = 1; i <= N; i++) 
     {
-        if (isupper(c)) {count += (4-curr%4)%4; curr = 1;}
-        else curr++;
+        int temp;
+        cin >> temp;
+        ans = (ans + temp)%mod;
     }
-    cout << count << endl;
+    for (int i = 1; i < N; i++) 
+    {
+        ans = (2*ans)%mod;
+    }
+    cout << ans;
+
 }
