@@ -1,3 +1,3 @@
 # Competitive Programming Solutions
 
-Last updated July 5th, 2025. 
+Last updated Jan 27th, 2026. 
