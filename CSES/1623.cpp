@@ -5,19 +5,19 @@ using namespace std;
 int N;
 int a[22];
 
-long long run(int i, long long lft, long long rht) {
-    if (i == N) {
-        return abs(lft - rht);
-    }
-    return min(run(i + 1, lft + a[i], rht), run(i + 1, lft, rht + a[i]));
-}
-
-int main() {
-    cin >> N;
-    for (int i = 0; i < N; ++i)
-        cin >> a[i];
-    cout << run(0, 0, 0) << "\n";
-}
+// long long run(int i, long long lft, long long rht) {
+//     if (i == N) {
+//         return abs(lft - rht);
+//     }
+//     return min(run(i + 1, lft + a[i], rht), run(i + 1, lft, rht + a[i]));
+// }
+//
+// int main() {
+//     cin >> N;
+//     for (int i = 0; i < N; ++i)
+//         cin >> a[i];
+//     cout << run(0, 0, 0) << "\n";
+// }
 
 int main() {
     cin >> N;
